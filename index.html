@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Train Scheduler</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+
+  <!-- Moment.js Reference -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="../Train_Scheduler/assets/css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Let the trains commence!</h1>
+        </div>
+    </div>
+    <!------------------------->
+    <div class="card mb-4" id="trainStats">
+            <div class="card-header"><strong>Current Train Schedule</strong></div>
+            <div class="card-body">
+              <table class="table table-sm table-hover" id='employee-table'>
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency(min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-------------------------->
+ <div class="jumbotron">  
+    <form id="trainAdd">
+            <div class="form-group">
+              <label for="employee-name-input"><strong>Train Name</strong></label>
+              <input class="form-control" id="employee-name-input" placeholder="Amtrak, etc." type="text">
+            </div>
+            <div class="form-group">
+              <label for="role-input"><strong>Destination</strong></label>
+              <input class="form-control" id="role-input" placeholder="North Pole, etc." type="text">
+            </div>
+            <div class="form-group">
+              <label for="start-input"><strong>First Train Time (Military Time)</strong></label>
+              <input class="form-control" id="start-input" placeholder="21:30" type="text">
+            </div>
+            <div class="form-group">
+              <label for="rate-input"><strong>Frequency(Min)</strong></label>
+              <input class="form-control" id="rate-input" placeholder="987345897023 minutes, etc." type="text">
+            </div>
+            <button class="btn btn-primary float-right" id="add-employee-btn">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>     
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

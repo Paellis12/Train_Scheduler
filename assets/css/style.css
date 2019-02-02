@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    
+    
+}
+
+.jumbotron {
+    opacity: .8;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+#trainStats{
+    opacity: .7;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#trainAdd{
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
