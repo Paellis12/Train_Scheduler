@@ -54,7 +54,7 @@ $(document).ready(function(){
 
   //firebase event//
 
-  tData.ref().on("child_added", function(childSnapshot) {
+  tData.on("child_added", function(childSnapshot) {
     console.log(childSnapshot);
 
     var names = childSnapshot.val().name;
