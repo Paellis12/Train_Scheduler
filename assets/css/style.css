@@ -13,6 +13,10 @@ h1 {
     
 }
 
+h5 {
+    text-align: center;
+}
+
 .jumbotron {
     opacity: .8;
     margin-left: 100px;
